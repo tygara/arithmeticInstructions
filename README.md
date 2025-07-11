@@ -5,14 +5,14 @@
 Write a code in Assembly that uses uninitialized and initialized
 variables for the following arithmetic instructions:
 
-1.) result = -var1 * 10
-2.) result = var1 + var2 + var3 + var4
-3.) result = (-var1 * var2) + var3
-4.) result = (var1 * 2) / (var2 - 3)
+1.) result = -var1 * 10   
+2.) result = var1 + var2 + var3 + var4  
+3.) result = (-var1 * var2) + var3  
+4.) result = (var1 * 2) / (var2 - 3)  
 
 ## Flowchart
 
-[Flowchart](docs/flowchart.png)
+[Flowchart](docs/flowchart.jpeg)
 
 ## Challenges Faced During the Lab
 
