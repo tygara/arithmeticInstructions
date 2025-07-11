@@ -3,7 +3,7 @@
 ## Task
 
 Write a code in Assembly that uses uninitialized and initialized
-variables for the following arithmetic instructions:
+Variables for the following arithmetic instructions:
 
 1.) result = -var1 * 10   
 2.) result = var1 + var2 + var3 + var4  
@@ -12,14 +12,14 @@ variables for the following arithmetic instructions:
 
 ## Flowchart
 
-[Flowchart](docs/flowchart.jpeg)
+[Flowchart](docs/flowchart.jpg)
 
 ## Challenges Faced During the Lab
 
 ### Phase 1: Planning
 
 In the planning stage, understanding the data types in x86
-architecture was critical. Knowing which registers to use
+Architecture was critical. Knowing which registers to use
 based on the size of the data types (byte, word, doubleword)
 took time to grasp. I had to reinforce my understanding of the 
 relationships between `al`, `ax`, and `eax`, and how data size 
@@ -27,13 +27,13 @@ affects the instructions used.
 
 ### Phase 2: Implementation
 
-Implementing the logic with correct order of operations was
-a key challenge. Multiplication and division required precise
-handling of registers and operand sizes. I also had to be
+Implementing the logic with the correct order of operations was
+a key challenge. Multiplication and division require precise
+Handling of registers and operand sizes. I also had to be
 mindful of how the results are stored, for example: 
-`imul` stores the result in `ax`, and dividing with `div`
+`imul` stores the result in `ax`, and divides with `div`
 requires the dividend to be set up in `ax` or `dx:ax`
-depending on operand size.
+Depending on operand size.
 
 Writing the result back to memory (`[result]`) needed the
 correct size specifier (`resb` for 8-bit,`resw` for 16-bit, `resd` for 32-bit),
